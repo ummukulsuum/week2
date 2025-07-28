@@ -5,3 +5,7 @@ class Data {
     print("my self $name");
   }
 }
+void main(){
+  Data take =Data();
+  take.sentence();
+}
