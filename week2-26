@@ -1,0 +1,37 @@
+class School {
+  String schoolName = "sidra";
+  String location = "kozhikkode";
+  String uniformColor = "blue&white";
+
+  void SchoolDetails() {
+    print("school details");
+    print("school name:"+this.schoolName);
+    print("school location:"+this.location);
+    print("uniform color: "+this.uniformColor);
+  }
+}
+
+class Student extends School{
+  String? studentName;
+  String? studentClass;
+  String? studentAddress;
+
+  Student(String name, String classname, String address) {
+    this.studentName = name;
+    this.studentClass = classname;
+    this.studentAddress = address;
+  }
+
+  void StudentDetails() {
+    print("studentDetails");
+    print("student Name: $this.studentName");
+    print("student class: $this.studentClass");
+    print("student Address: $this.studentAddress");
+  }
+}
+
+void main() {
+  Student kulsuum = Student("ummukulsuum", "C2A", "feroke");
+  kulsuum.StudentDetails();
+  kulsuum.SchoolDetails();
+}
